@@ -5,7 +5,7 @@
     id        = "au.edu.vic.marcellin.mobile"
     versionCode = "3"
     version   = "1.2">
-    <name>MyMarcelline</name>
+    <name>MyMarcellin</name>
     
     <description>
         Marcellin Mobile app
@@ -32,7 +32,7 @@
     
     <allow-intent href="*" />
     
-    <preference name="phonegap-version" value="cli-6.1.0" />
+    <preference name="phonegap-version" value="cli-6.2.1" />
     <preference name="orientation"      value="default" />
     <preference name="target-device"    value="universal" />
     <preference name="fullscreen"       value="false" />
