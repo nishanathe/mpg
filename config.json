@@ -1,25 +1,30 @@
 {
-
-"app_id" : "au.edu.vic.marcellinmobile",
-
-"versioncode" : "2011",
-
-"versionname" : "3.0.0",
-
-"cache_expiration_time" : 300000,
-
-"default_lang" : "en",
-
-"languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "de": "Deutsch","en": "English", "es": "Español"                      , "es_mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語","nl": "Nederlands", "ru": "Русский", "sv": "Svenska", "tr" : "Türkçe", "zh_cn" : "简体中文", "zh_tw" : "正體中文"},
-
-"wsservice" : "moodle_mobile_app",
-
-"wsextservice" : "local_mobile",
     
-"siteurl" : "https://my.marcellin.vic.edu.au/moodle19",
-
-"siteurln" : "http://marcellin.vic.edu.au/publications/the-eagle",
+    "app_id" : "au.edu.vic.marcellin.mobile",
     
-"gcmpn": "694767596569",
-
+    "versioncode" : "2011",
+    
+    "versionname" : "3.0.0",
+    
+    "cache_expiration_time" : 300000,
+    
+    "plugins" : ["notifications", "messages", "upload", "events", "myfiles", "contents", "participants", "grades","addcontact", "addnote", "sendmessage", "forum", "label", "url", "page", "resource"],
+    
+    "default_lang" : "en",
+    
+    "languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "de": "Deutsch","en": "English", "es": "Español"                      , "es_mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語","nl": "Nederlands", "ru": "Русский", "sv": "Svenska", "tr" : "Türkçe", "zh_cn" : "简体中文", "zh_tw" : "正體中文"},
+    
+    "wsservice" : "moodle_mobile_app",
+    
+    "wsextservice" : "local_mobile",
+    
+    "siteurl" : "https://my.marcellin.vic.edu.au/moodle19",
+    
+    "siteurln" : "http://marcellin.vic.edu.au/publications/the-eagle",
+    
+    "notifications_enabled": true,
+    
+    "gcmpn": "232865181408",
+    
 }
+

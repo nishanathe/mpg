@@ -10134,8 +10134,21 @@ input.mm-fileuploader-picker {
   opacity: 0;
   outline: none; }
 
-#mm-settings-languagelabel {
-  color: #000; }
+.mm-mm_login_sites .item-thumbnail-left .item-content {
+  padding-top: 16px; }
+
+.mm-mm_login_sites .avatar {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #ddd; }
+
+.mm-mm_login_sites .card {
+  margin: 15px 10px; }
 
 .mm-question-textarea {
   width: 100%;
@@ -10234,6 +10247,9 @@ li.mm-question-answer-incorrect,
 .mm-question-warning, p.mm-question-warning, .item .mm-question-warning {
   color: #c00; }
 
+#mm-settings-languagelabel {
+  color: #000; }
+
 .bar-side-menu {
   border-color: transparent;
   background-color: #783141;
@@ -10254,22 +10270,6 @@ li.mm-question-answer-incorrect,
 
 .has-side-menu-header {
   top: 80px; }
-
-.mm-mm_login_sites .item-thumbnail-left .item-content {
-  padding-top: 16px; }
-
-.mm-mm_login_sites .avatar {
-  margin: 0;
-  width: 80px;
-  height: 80px;
-  max-width: 80px;
-  max-height: 80px;
-  border-radius: 50%;
-  padding: 4px;
-  border: 1px solid #ddd; }
-
-.mm-mm_login_sites .card {
-  margin: 15px 10px; }
 
 /* - User grades table (most of it extracted from MM1)
 -------------------------------------------------------------------------- */
@@ -10545,23 +10545,6 @@ p.mma-mod-assign-warning {
   margin: 0;
   width: auto; }
 
-.mma-mod_choice-user {
-  position: relative;
-  display: inline-block; }
-  .mma-mod_choice-user img {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    left: 50%;
-    margin-left: -20px; }
-  .mma-mod_choice-user p {
-    display: inline-block;
-    padding-top: 50px; }
-
-.mma-mod_choice-graph-horizontal {
-  height: 50px; }
-
 .mma-chat-notice {
   text-align: center;
   margin-top: 10px; }
@@ -10583,6 +10566,23 @@ p.mma-mod-assign-warning {
 
 .mma-chat-reconnect-button, .button.mma-chat-reconnect-button {
   margin: 0; }
+
+.mma-mod_choice-user {
+  position: relative;
+  display: inline-block; }
+  .mma-mod_choice-user img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -20px; }
+  .mma-mod_choice-user p {
+    display: inline-block;
+    padding-top: 50px; }
+
+.mma-mod_choice-graph-horizontal {
+  height: 50px; }
 
 .mma-forum-discussion-link {
   text-decoration: none; }
@@ -10805,6 +10805,99 @@ select.mma-mod_survey-select {
   font-weight: bold;
   font-size: 16px; }
 
+.mma-qtype-ddmarker-container mm-loading {
+  position: absolute;
+  left: 50%; }
+
+.mma-qtype-ddmarker-container .qtext {
+  margin-bottom: 0.5em;
+  display: block; }
+
+.mma-qtype-ddmarker-container div.droparea img {
+  border: 1px solid #000;
+  max-width: 100%; }
+
+.mma-qtype-ddmarker-container .draghome img, .mma-qtype-ddmarker-container .draghome span {
+  visibility: hidden; }
+
+.mma-qtype-ddmarker-container .dragitems .dragitem {
+  cursor: pointer;
+  position: absolute;
+  z-index: 2; }
+
+.mma-qtype-ddmarker-container .dropzones {
+  position: absolute; }
+
+.mma-qtype-ddmarker-container .dropzones svg {
+  z-index: 3; }
+
+.mma-qtype-ddmarker-container .dragitem.beingdragged .markertext {
+  z-index: 5;
+  box-shadow: 3px 3px 4px #000; }
+
+.mma-qtype-ddmarker-container .dragitems .draghome {
+  margin: 10px;
+  display: inline-block; }
+
+.mma-qtype-ddmarker-container .dragitems.readonly .dragitem {
+  cursor: auto; }
+
+.mma-qtype-ddmarker-container div.ddarea {
+  text-align: center; }
+
+.mma-qtype-ddmarker-container div.ddarea .markertexts {
+  min-height: 80px;
+  position: absolute;
+  text-align: left; }
+
+.mma-qtype-ddmarker-container .dropbackground {
+  margin: 0 auto; }
+
+.mma-qtype-ddmarker-container div.dragitems div.draghome, .mma-qtype-ddmarker-container div.dragitems div.dragitem,
+.mma-qtype-ddmarker-container div.draghome, .mma-qtype-ddmarker-container div.drag {
+  font: 13px/1.231 arial,helvetica,clean,sans-serif; }
+
+.mma-qtype-ddmarker-container div.dragitems span.markertext,
+.mma-qtype-ddmarker-container div.markertexts span.markertext {
+  margin: 0 5px;
+  z-index: 2;
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px;
+  display: inline-block;
+  zoom: 1;
+  border-radius: 10px; }
+
+.mma-qtype-ddmarker-container div.markertexts span.markertext {
+  z-index: 3;
+  background-color: yellow;
+  border-style: solid;
+  border-width: 2px;
+  border-color: khaki;
+  position: absolute; }
+
+.mma-qtype-ddmarker-container span.wrongpart {
+  background-color: yellow;
+  border-style: solid;
+  border-width: 2px;
+  border-color: khaki;
+  padding: 5px;
+  border-radius: 10px;
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+  margin: 5px;
+  display: inline-block; }
+
+.mma-qtype-ddmarker-container div.dragitems img.target {
+  position: absolute;
+  left: -7px;
+  /* This must be half the size of the target image, minus 0.5. */
+  top: -7px;
+  /* In other words, this works for a 15x15 cross-hair. */ }
+
+.mma-qtype-ddmarker-container div.dragitems div.draghome img.target {
+  display: none; }
+
 .mma-qtype-ddimageortext-container mm-loading {
   position: absolute;
   left: 50%; }
@@ -10901,150 +10994,6 @@ select.mma-mod_survey-select {
   z-index: 3;
   box-shadow: 3px 3px 4px #000; }
 
-.mma-qtype-ddmarker-container mm-loading {
-  position: absolute;
-  left: 50%; }
-
-.mma-qtype-ddmarker-container .qtext {
-  margin-bottom: 0.5em;
-  display: block; }
-
-.mma-qtype-ddmarker-container div.droparea img {
-  border: 1px solid #000;
-  max-width: 100%; }
-
-.mma-qtype-ddmarker-container .draghome img, .mma-qtype-ddmarker-container .draghome span {
-  visibility: hidden; }
-
-.mma-qtype-ddmarker-container .dragitems .dragitem {
-  cursor: pointer;
-  position: absolute;
-  z-index: 2; }
-
-.mma-qtype-ddmarker-container .dropzones {
-  position: absolute; }
-
-.mma-qtype-ddmarker-container .dropzones svg {
-  z-index: 3; }
-
-.mma-qtype-ddmarker-container .dragitem.beingdragged .markertext {
-  z-index: 5;
-  box-shadow: 3px 3px 4px #000; }
-
-.mma-qtype-ddmarker-container .dragitems .draghome {
-  margin: 10px;
-  display: inline-block; }
-
-.mma-qtype-ddmarker-container .dragitems.readonly .dragitem {
-  cursor: auto; }
-
-.mma-qtype-ddmarker-container div.ddarea {
-  text-align: center; }
-
-.mma-qtype-ddmarker-container div.ddarea .markertexts {
-  min-height: 80px;
-  position: absolute;
-  text-align: left; }
-
-.mma-qtype-ddmarker-container .dropbackground {
-  margin: 0 auto; }
-
-.mma-qtype-ddmarker-container div.dragitems div.draghome, .mma-qtype-ddmarker-container div.dragitems div.dragitem,
-.mma-qtype-ddmarker-container div.draghome, .mma-qtype-ddmarker-container div.drag {
-  font: 13px/1.231 arial,helvetica,clean,sans-serif; }
-
-.mma-qtype-ddmarker-container div.dragitems span.markertext,
-.mma-qtype-ddmarker-container div.markertexts span.markertext {
-  margin: 0 5px;
-  z-index: 2;
-  background-color: white;
-  border: 2px solid black;
-  padding: 5px;
-  display: inline-block;
-  zoom: 1;
-  border-radius: 10px; }
-
-.mma-qtype-ddmarker-container div.markertexts span.markertext {
-  z-index: 3;
-  background-color: yellow;
-  border-style: solid;
-  border-width: 2px;
-  border-color: khaki;
-  position: absolute; }
-
-.mma-qtype-ddmarker-container span.wrongpart {
-  background-color: yellow;
-  border-style: solid;
-  border-width: 2px;
-  border-color: khaki;
-  padding: 5px;
-  border-radius: 10px;
-  filter: alpha(opacity=60);
-  opacity: 0.6;
-  margin: 5px;
-  display: inline-block; }
-
-.mma-qtype-ddmarker-container div.dragitems img.target {
-  position: absolute;
-  left: -7px;
-  /* This must be half the size of the target image, minus 0.5. */
-  top: -7px;
-  /* In other words, this works for a 15x15 cross-hair. */ }
-
-.mma-qtype-ddmarker-container div.dragitems div.draghome img.target {
-  display: none; }
-
-.mma-qtype-gapselect-container p {
-  margin: 0 0 .5em; }
-
-.mma-qtype-gapselect-container select {
-  height: 30px;
-  line-height: 30px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  padding: 4px 6px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-bottom: 10px; }
-
-.mma-qtype-match-container select {
-  padding: 0 36px 0 0;
-  max-width: 100%; }
-
-.mma-qtype-multianswer-container p {
-  margin: 0 0 .5em; }
-
-.mma-qtype-multianswer-container .answer div.r0, .mma-qtype-multianswer-container .answer div.r1 {
-  padding: 0.3em; }
-
-.mma-qtype-multianswer-container table {
-  width: 100%;
-  display: table; }
-
-.mma-qtype-multianswer-container tr {
-  display: table-row; }
-
-.mma-qtype-multianswer-container td {
-  display: table-cell; }
-
-.mma-qtype-multianswer-container input, .mma-qtype-multianswer-container select {
-  display: inline-block;
-  border: 1px solid #ccc;
-  padding: 4px 6px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  margin-bottom: 10px; }
-
-.mma-qtype-multianswer-container select {
-  height: 30px;
-  line-height: 30px; }
-
-.mma-qtype-multianswer-container input[type="radio"], .mma-qtype-multianswer-container input[type="checkbox"] {
-  margin-top: -4px;
-  margin-right: 7px; }
-
 .mma-qtype-ddwtos-container .qtext {
   margin-bottom: 0.5em;
   display: block; }
@@ -11136,6 +11085,57 @@ select.mma-mod_survey-select {
 
 .mma-qtype-ddwtos-container sub {
   bottom: -0.2em; }
+
+.mma-qtype-gapselect-container p {
+  margin: 0 0 .5em; }
+
+.mma-qtype-gapselect-container select {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px; }
+
+.mma-qtype-match-container select {
+  padding: 0 36px 0 0;
+  max-width: 100%; }
+
+.mma-qtype-multianswer-container p {
+  margin: 0 0 .5em; }
+
+.mma-qtype-multianswer-container .answer div.r0, .mma-qtype-multianswer-container .answer div.r1 {
+  padding: 0.3em; }
+
+.mma-qtype-multianswer-container table {
+  width: 100%;
+  display: table; }
+
+.mma-qtype-multianswer-container tr {
+  display: table-row; }
+
+.mma-qtype-multianswer-container td {
+  display: table-cell; }
+
+.mma-qtype-multianswer-container input, .mma-qtype-multianswer-container select {
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 4px 6px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px; }
+
+.mma-qtype-multianswer-container select {
+  height: 30px;
+  line-height: 30px; }
+
+.mma-qtype-multianswer-container input[type="radio"], .mma-qtype-multianswer-container input[type="checkbox"] {
+  margin-top: -4px;
+  margin-right: 7px; }
 
 .button.active,
 .button.activated {
