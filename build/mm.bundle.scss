@@ -349,27 +349,6 @@ input.mm-fileuploader-picker {
 }
 
 
-.mm-mm_login_sites {
-  .item-thumbnail-left .item-content {
-    padding-top: 16px;
-  }
-
-  .avatar {
-    margin: 0;
-    width: 80px;
-    height: 80px;
-    max-width: 80px;
-    max-height: 80px;
-    border-radius : 50%;
-    padding: 4px;
-    border: 1px solid #ddd;
-  }
-
-  .card {
-    margin: 15px 10px;
-  }
-}
-
 $mm-question-correct-color:         #468847 !default;
 $mm-question-incorrect-color:       #b94a48 !default;
 $mm-question-state-correct-color:   #cfc !default;
@@ -492,6 +471,27 @@ li.mm-question-answer-incorrect,
   color: $base-color;
 }
 
+
+.mm-mm_login_sites {
+  .item-thumbnail-left .item-content {
+    padding-top: 16px;
+  }
+
+  .avatar {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    border-radius : 50%;
+    padding: 4px;
+    border: 1px solid #ddd;
+  }
+
+  .card {
+    margin: 15px 10px;
+  }
+}
 // Variables.
 $bar-side-menu-height: 80px !default;
 $bar-side-menu-color: $bar-content-bg !default;

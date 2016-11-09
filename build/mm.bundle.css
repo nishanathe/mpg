@@ -10134,22 +10134,6 @@ input.mm-fileuploader-picker {
   opacity: 0;
   outline: none; }
 
-.mm-mm_login_sites .item-thumbnail-left .item-content {
-  padding-top: 16px; }
-
-.mm-mm_login_sites .avatar {
-  margin: 0;
-  width: 80px;
-  height: 80px;
-  max-width: 80px;
-  max-height: 80px;
-  border-radius: 50%;
-  padding: 4px;
-  border: 1px solid #ddd; }
-
-.mm-mm_login_sites .card {
-  margin: 15px 10px; }
-
 .mm-question-textarea {
   width: 100%;
   height: 250px;
@@ -10249,6 +10233,22 @@ li.mm-question-answer-incorrect,
 
 #mm-settings-languagelabel {
   color: #000; }
+
+.mm-mm_login_sites .item-thumbnail-left .item-content {
+  padding-top: 16px; }
+
+.mm-mm_login_sites .avatar {
+  margin: 0;
+  width: 80px;
+  height: 80px;
+  max-width: 80px;
+  max-height: 80px;
+  border-radius: 50%;
+  padding: 4px;
+  border: 1px solid #ddd; }
+
+.mm-mm_login_sites .card {
+  margin: 15px 10px; }
 
 .bar-side-menu {
   border-color: transparent;
